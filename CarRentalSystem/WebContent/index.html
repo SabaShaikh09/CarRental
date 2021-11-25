@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+    .container-fluid h1:hover{
+            background: linear-gradient(#833ab4,#fd1d1d,#fcb045) ;  
+    }
+    .jumbotron {
+  position:relative;
+  overflow:hidden;
+}
+
+.jumbotron .container-fluid{
+  position:relative;
+  z-index:2;
+  
+  background:rgba(0,0,0,0.2);
+  padding:2rem;
+  border:1px solid rgba(0,0,0,0.1);
+  border-radius:3px;
+}
+
+.jumbotron-background {
+  object-fit:cover;
+  font-family: 'object-fit: cover;';
+  position:absolute;
+  top:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  opacity:0.5;
+}
+
+img.blur {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+
+}
+</style>
+<title>Queen Cars</title>
+<link rel="stylesheet" href="bootstrap.min.css"/>
+</head>
+<body>
+<img src="images/carimg1.jpg" alt="baby 1" height="100" width="1600">
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="background-color: red;" href="index.html">CarQueen Rent</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" class="active">HomePage</a></li>
+        <li><a href="#">Admin</a></li>
+        <li><a href="#">Owner</a></li>
+       </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="jumbotron jumbotron-fluid bg-dark">
+  <div class="jumbotron-background">
+    <img src="images/carrr1.jpeg" height="650" width="1500" class="blur">
+  </div>
+<div class="container-fluid">
+<h1>Queen Wheels Rental</h1>
+
+<div class="row">
+  <div class="col-md-6">
+  <h3>CarAdmin Login</h3>
+  <form action="AdminLogin" method="post" style="width:300px">
+  <div class="form-group">
+    <label for="email1">Admin Email-Id</label>
+    <input type="email" class="form-control" name="email" id="email1" placeholder="Email"/>
+  </div>
+  <div class="form-group">
+    <label for="password1">Admin Password</label>
+    <input type="password" class="form-control" name="password" id="password1" placeholder="Password"/>
+  </div>  
+  <button type="submit" class="btn btn-info">Login</button>
+</form>
+  
+  </div>
+  <div class="col-md-6">
+  <h3>CarOwner Login</h3>
+  <form action="OwnerLogin" method="post" style="width:300px">
+  <div class="form-group">
+    <label for="email1">Owner Email-Id</label>
+    <input type="email" class="form-control" id="email1" name="email" placeholder="Email"/>
+  </div>
+  <div class="form-group">
+    <label for="password1">Owner Password</label>
+    <input type="password" class="form-control" id="password1" name="password" placeholder="Password"/>
+  </div>  
+  <button type="submit" class="btn btn-info">Login</button>
+</form>
+</div>
+  </div>
+</div>
+</div>
+
+
+
+
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+</body>
+</html>
